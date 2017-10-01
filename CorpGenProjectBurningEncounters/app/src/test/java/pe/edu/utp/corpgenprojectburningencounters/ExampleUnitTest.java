@@ -1,4 +1,4 @@
-package com.example.root.corpgenprojectburningencounters;
+package pe.edu.utp.corpgenprojectburningencounters;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.root.corpgenprojectburningencounters;
+package pe.edu.utp.corpgenprojectburningencounters;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.root.corpgenprojectburningencounters", appContext.getPackageName());
+        assertEquals("pe.edu.utp.corpgenprojectburningencounters", appContext.getPackageName());
     }
 }
