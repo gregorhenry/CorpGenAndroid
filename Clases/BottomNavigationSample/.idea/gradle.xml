@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../../../Documents/UTP/CORPGEN/MOBILE CORPGEN/CorpGenProjectBurningEncounters" />
-            <option value="$PROJECT_DIR$/../../../Documents/UTP/CORPGEN/MOBILE CORPGEN/CorpGenProjectBurningEncounters/app" />
+            <option value="$PROJECT_DIR$/../../../../Documents/UTP/CORPGEN/MOBILE CORPGEN/Clases/BottomNavigationSample" />
+            <option value="$PROJECT_DIR$/../../../../Documents/UTP/CORPGEN/MOBILE CORPGEN/Clases/BottomNavigationSample/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

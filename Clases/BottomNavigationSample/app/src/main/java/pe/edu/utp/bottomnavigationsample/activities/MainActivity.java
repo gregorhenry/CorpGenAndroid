@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_products:
                 return new ProductsFragment();
             case R.id.navigation_settings:
-                return new SettingsFragment();
         }
         return null;
     }
