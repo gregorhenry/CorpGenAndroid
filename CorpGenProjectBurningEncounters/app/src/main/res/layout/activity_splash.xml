@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pe.edu.utp.corpgenprojectburningencounters.activities.SplashActivity">
+    tools:context="pe.edu.utp.corpgenprojectburningencounters.activities.BurningMainActivity"
+    android:background="#000"
+    >
+<me.wangyuwei.particleview.ParticleView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:pv_host_text="CorpGEn"
+    app:pv_host_text_size="22sp"
+    app:pv_particle_text=".com"
+    app:pv_particle_text_size="14sp"
+    app:pv_text_color="#fff"
+    app:pv_text_anim_time="3000"
+    app:pv_spread_anim_time="2000"
+    app:pv_host_text_anim_time="3000"
+    android:id="@+id/my_particle_view"/>
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_splash" />
-
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -2,45 +2,31 @@ package pe.edu.utp.corpgenprojectburningencounters.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
+import me.wangyuwei.particleview.ParticleView;
 import pe.edu.utp.corpgenprojectburningencounters.R;
+
+/**
+ * Created by root on 10/27/17.
+ */
 
 public class SplashActivity extends AppCompatActivity {
 
-    final static int SPLASH_OUT_TIME = 10000;
-    final static int SLEEP_INTERVAL = 100;
-    final static String TAG = "Coorp Gen";
+    ParticleView particleView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        Thread splashDelayer = new Thread(){
-            int wait = 0;
+        particleView = (ParticleView) findViewById(R.id.my_particle_view);
+        particleView.startAnim();
 
-            @Override
-            public void run(){
-                try {
-                    super.run();
-                    while(wait < SPLASH_OUT_TIME){
-                        sleep(SLEEP_INTERVAL);
-                        wait += SPLASH_OUT_TIME;
-                    }
-                }catch (Exception e){
-                    e.printStackTrace();
-                    Log.d(TAG,"Warning on SplashActivity");
-                }finally {
-                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-                }
-            }
-        };
-        splashDelayer.start();
     }
+
+
+
 
 }
