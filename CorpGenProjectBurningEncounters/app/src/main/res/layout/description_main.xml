@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageDescrip1"
         android:layout_width="110dp"
         android:layout_height="85dp"
         android:layout_marginLeft="24dp"
@@ -16,10 +16,10 @@
         android:layout_marginTop="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@mipmap/ic_beer"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageDescrip3" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageDescrip2"
         android:layout_width="110dp"
         android:layout_height="85dp"
         android:layout_marginLeft="24dp"
@@ -27,10 +27,10 @@
         android:layout_marginTop="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@mipmap/ic_beer"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageDescrip1" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageDescrip3"
         android:layout_width="110dp"
         android:layout_height="85dp"
         android:layout_marginLeft="24dp"
@@ -38,70 +38,10 @@
         android:layout_marginTop="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:srcCompat="@mipmap/ic_beer"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="21dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="184dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageDescrip4" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageDescrip4"
         android:layout_width="110dp"
         android:layout_height="85dp"
         app:srcCompat="@mipmap/ic_beer"
@@ -110,26 +50,91 @@
         android:layout_marginLeft="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="24dp" />
-
+    //...1
     <TextView
-        android:id="@+id/button2"
+        android:id="@+id/textDescrip1"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="VODKA"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip4"
+        app:layout_constraintTop_toTopOf="parent" />
+    //...2
+    <TextView
+        android:id="@+id/textDescrip2"
         android:layout_width="184dp"
         android:layout_height="21dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:text="VODKA"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip4"
+        app:layout_constraintTop_toBottomOf="@+id/textDescrip1" />
 
+    //...3
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textDescrip3"
         android:layout_width="184dp"
         android:layout_height="21dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="50dp"
-        android:text="CERVEZA ARTEZANAL"
-        app:layout_constraintLeft_toRightOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="RUM"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip3"
+        app:layout_constraintTop_toBottomOf="@+id/textDescrip2" />
+
+    //...4
+    <TextView
+        android:id="@+id/textDescrip4"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="RUM"
+        app:layout_constraintLeft_toRightOf="@id/imageDescrip3"
+        app:layout_constraintTop_toBottomOf="@id/textDescrip3" />
+    //...5
+    <TextView
+        android:id="@+id/textDecrip5"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="TEQUILA"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip1"
+        app:layout_constraintTop_toBottomOf="@+id/textDescrip4" />
+
+    //...6
+    <TextView
+        android:id="@+id/textDecript6"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="TEQUILA"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip1"
+        app:layout_constraintTop_toBottomOf="@+id/textDecrip5" />
+
+    //...7
+    <TextView
+        android:id="@+id/textDescrip7"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="59dp"
+        android:text="GIN"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip2"
+        app:layout_constraintTop_toBottomOf="@+id/textDecript6" />
+    //...8
+    <TextView
+        android:id="@+id/textDescrip8"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:text="GIN"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescrip2"
+        app:layout_constraintTop_toBottomOf="@+id/textDescrip7" />
+
 
 
 </android.support.constraint.ConstraintLayout>
