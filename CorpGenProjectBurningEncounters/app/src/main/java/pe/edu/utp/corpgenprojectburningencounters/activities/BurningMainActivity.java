@@ -21,16 +21,20 @@ import android.os.Bundle;
 
 import me.wangyuwei.particleview.ParticleView;
 import pe.edu.utp.corpgenprojectburningencounters.R;
+import pe.edu.utp.corpgenprojectburningencounters.login.LoginPresenterImpl;
+import pe.edu.utp.corpgenprojectburningencounters.login.interfaces.MenuView;
 
 public class BurningMainActivity extends AppCompatActivity
-       implements NavigationView.OnNavigationItemSelectedListener {
+       implements NavigationView.OnNavigationItemSelectedListener, MenuView{
 
-
+private LoginPresenterImpl loginPresenter;
 
     @Override
            protected void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
                   setContentView(R.layout.activity_main);
+                loginPresenter = new LoginPresenterImpl(this);
+                loginPresenter.onCreate();
 
 
 
@@ -111,4 +115,9 @@ public void onBackPressed() {
                   drawer.closeDrawer(GravityCompat.START);
                   return true;
               }
+
+    @Override
+    public void returnLogin() {
+
+    }
 }

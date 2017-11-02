@@ -10,4 +10,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login.error.register">Error en el registro</string>
+    <string name="login.error.validation">Error en la validación</string>
+    <string name="login.success">Usuario registrado exitosamente</string>
+    <string name="title_activity_contact">ContactActivity</string>
+
+    <!--facebook -->
+    <string name="facebook_app_id">161823357744829</string>
+    <string name="fb_login_protocol_scheme">fb161823357744829</string>
+
 </resources>
