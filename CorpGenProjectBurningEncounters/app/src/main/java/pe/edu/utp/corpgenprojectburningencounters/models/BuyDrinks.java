@@ -12,6 +12,46 @@ import pe.edu.utp.corpgenprojectburningencounters.R;
  */
 
 public class BuyDrinks {
+    private String name;
+    private String description;
+    private double price;
+
+
+    public BuyDrinks(String name, String description, int price) {
+        this.name = name;
+        this.description = description;
+        this.price=price;
+    }
+
+    public BuyDrinks() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public BuyDrinks setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public BuyDrinks setDescription(String address) {
+        this.description = description;
+        return this;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public BuyDrinks setPrice(double price) {
+        this.price = price;
+        return this;
+    }
     private Button puls, less;
     private TextView acountantTextView;
 
