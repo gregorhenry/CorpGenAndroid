@@ -25,6 +25,7 @@ import pe.edu.utp.corpgenprojectburningencounters.login.LoginPresenterImpl;
 import pe.edu.utp.corpgenprojectburningencounters.login.interfaces.MenuView;
 
 public class BurningMainActivity extends AppCompatActivity
+
        implements NavigationView.OnNavigationItemSelectedListener, MenuView{
 
 private LoginPresenterImpl loginPresenter;
@@ -47,6 +48,9 @@ private LoginPresenterImpl loginPresenter;
             public void onClick(View view) {
                     Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                                                    .setAction("Action", null).show();
+
+
+
                               }
         });
 
