@@ -9,7 +9,8 @@ package pe.edu.utp.corpgenprojectburningencounters.activities;
 import android.os.Bundle;
  import android.support.design.widget.FloatingActionButton;
  import android.support.design.widget.Snackbar;
- import android.view.View;
+import android.support.v4.app.Fragment;
+import android.view.View;
  import android.support.design.widget.NavigationView;
  import android.support.v4.view.GravityCompat;
  import android.support.v4.widget.DrawerLayout;
@@ -21,6 +22,7 @@ import android.os.Bundle;
 
 import me.wangyuwei.particleview.ParticleView;
 import pe.edu.utp.corpgenprojectburningencounters.R;
+import pe.edu.utp.corpgenprojectburningencounters.fragments.PubsFragment;
 import pe.edu.utp.corpgenprojectburningencounters.login.LoginPresenterImpl;
 import pe.edu.utp.corpgenprojectburningencounters.login.interfaces.MenuView;
 
@@ -98,7 +100,7 @@ public void onBackPressed() {
           @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-          // Handle navigation view item clicks here.
+              // Handle navigation view item clicks here.
     int id = item.getItemId();
 
     if (id == R.id.nav_camera) {
@@ -118,7 +120,7 @@ public void onBackPressed() {
    DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                   drawer.closeDrawer(GravityCompat.START);
                   return true;
-              }
+    }
 
     @Override
     public void returnLogin() {

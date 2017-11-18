@@ -36,6 +36,24 @@ public class PubsAdapter extends RecyclerView.Adapter<PubsAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        final Pub pub = pubs.get(position);
+        holder.logoImageView.setImageResource(R.mipmap.ic_launcher);
+        holder.nameTextView.setText(pub.getName());
+        holder.addressTextView.setText(pub.getAddress());
+        holder.eventTextView.setText(pub.getEvent());
+        holder.horaryTextView.setText(pub.getHorary());
+       holder.descriptionTextView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // TODO: Start About Source Activity
+            }
+        });
+       holder.newsTextView.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               //TODO: Start News
+           }
+       });
     }
 
     @Override

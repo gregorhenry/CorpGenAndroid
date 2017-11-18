@@ -1,18 +1,33 @@
 package pe.edu.utp.corpgenprojectburningencounters.fragments;
 
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import pe.edu.utp.corpgenprojectburningencounters.R;
+import pe.edu.utp.corpgenprojectburningencounters.adapters.PubsAdapter;
+import pe.edu.utp.corpgenprojectburningencounters.models.Pub;
+import pe.edu.utp.corpgenprojectburningencounters.models.PubsRepository;
+
+import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class PubsFragment extends Fragment {
+
+    RecyclerView pubsRecyclerView;
+    PubsAdapter pubsAdapter;
+    RecyclerView.LayoutManager pubsLayoutManager;
+    List<Pub> pubs;
 
 
     public PubsFragment() {
@@ -24,21 +39,29 @@ public class PubsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pubs, container, false);
+        View view = inflater.inflate(R.layout.fragment_pubs, container, false);
+        pubsRecyclerView = (RecyclerView)
+                view.findViewById(R.id.pubsRecyclerView);
+        pubs = PubsRepository.getPubs();
+        pubsAdapter = new PubsAdapter(pubs);
+        pubsLayoutManager = new GridLayoutManager(view.getContext(), 2);
+        pubsRecyclerView.setAdapter(pubsAdapter);
+        pubsRecyclerView.setLayoutManager(pubsLayoutManager);
+        adaptGridTo(getResources().getConfiguration());
+        return view;
     }
 
 
 
-   //private Fragment getFragmentFor(int id){
-     //   switch (id){
-       //     case R.id.navigation_pubs:
-         //       return new PubsFragment();
-        //}
 
-    //}
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        adaptGridTo(newConfig);
+    }
 
-    //private boolean navigateAccordingTo(int id){
-      //  getSupportFragmentManager().beginTransaction().replace(R.id.content, getFragmentFor(id))commit();
-        //return true;
-    //}
+    private void adaptGridTo(Configuration configuration) {
+        int spanCount = configuration.orientation == ORIENTATION_PORTRAIT ? 2 : 3;
+        ((GridLayoutManager)pubsLayoutManager).setSpanCount(spanCount);
+    }
 }
